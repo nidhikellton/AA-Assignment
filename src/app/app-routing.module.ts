@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { Question2Component } from './question2/question2.component';
-import { Question3Component } from './question3/question3.component';
+import { AnagramComponent } from './anagram/anagram.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { TempTrackerComponent } from './temp-tracker/temp-tracker.component';
 
 const routes: Routes = [
   {
@@ -13,13 +12,8 @@ const routes: Routes = [
 
   },
   { path: 'register', component: RegistrationComponent },
-  { path: 'anagram', component: Question2Component },
-  { path: 'temp', component: Question3Component },
-
-
-
-
-
+  { path: 'anagram', component: AnagramComponent },
+  { path: 'temp', component: TempTrackerComponent },
 ];
 
 @NgModule({

@@ -30,6 +30,13 @@ export class RegistrationComponent implements OnInit {
     this.showMessage = false;
     if (this.registerForm.valid) {
       this.showMessage = true;
+      this.submitted = false;
     }
+  }
+
+  resetForm(): void {
+    this.submitted = false;
+    this.showMessage = false;
+    this.registerForm.reset();
   }
 }

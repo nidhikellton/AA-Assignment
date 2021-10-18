@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { Question2Component } from './question2/question2.component';
-import { Question3Component } from './question3/question3.component';
+import { AnagramComponent } from './anagram/anagram.component';
+import { TempTrackerComponent } from './temp-tracker/temp-tracker.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,8 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     RegistrationComponent,
-    Question2Component,
-    Question3Component
+    AnagramComponent,
+    TempTrackerComponent
   ],
   imports: [
     BrowserModule,

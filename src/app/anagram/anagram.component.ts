@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-question2',
-  templateUrl: './question2.component.html',
-  styleUrls: ['./question2.component.css']
+  selector: 'app-anagram',
+  templateUrl: './anagram.component.html',
+  styleUrls: ['./anagram.component.css']
 })
-export class Question2Component implements OnInit {
+export class AnagramComponent implements OnInit {
   word1: string;
   word2: string;
   message = '';

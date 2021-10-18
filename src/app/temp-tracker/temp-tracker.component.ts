@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-question3',
-  templateUrl: './question3.component.html',
-  styleUrls: ['./question3.component.css']
+  selector: 'app-temp-tracker',
+  templateUrl: './temp-tracker.component.html',
+  styleUrls: ['./temp-tracker.component.css']
 })
-export class Question3Component implements OnInit {
+export class TempTrackerComponent implements OnInit {
   temperatureForm: FormGroup;
   tempArr = [];
   maxTemp: number;
