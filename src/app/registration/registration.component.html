@@ -1,0 +1,47 @@
+<div>
+    <h3>User Registration</h3>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" id='registerForm'>
+        <div>
+            <label>First Name: </label>
+            <input type="text" formControlName="firstName" minlength="5" /><br>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.firstName?.errors?.required">First
+                Name is required</span>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.firstName?.errors?.minlength">First name
+                should have minimum length of 5</span>
+        </div><br>
+        <div>
+            <label>Last Name: </label>
+            <input type="text" formControlName="lastName" minlength="5" /><br>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.lastName?.errors?.required">Last
+                Name is required</span>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.lastName?.errors?.minlength">Last name
+                should have minimum length of 5</span>
+        </div> <br>
+        <div>
+            <label>Phone Number: </label>
+            <input type="text" formControlName="phoneNo" maxlength="10" /><br>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.phoneNo?.errors?.required">Phone
+                Number is required</span>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.phoneNo?.errors?.pattern">Enter Valid
+                Phone Number</span>
+        </div> <br>
+
+        <div>
+            <label>Country: </label>
+            <select formControlName="country">
+                <option disabled>Select Country</option>
+                <option *ngFor="let country of countries">{{country}}</option>
+            </select><br>
+            <span class="error-msg" *ngIf="submitted && registerForm.controls.country?.errors?.required">Country Name
+                is required</span>
+        </div> <br>
+
+        <div>
+            <button >Submit</button>
+        </div>
+    </form>
+</div>
+
+<div *ngIf="showMessage">
+    <span class="success-msg">{{successMessage}}</span>
+</div>

@@ -1,0 +1,23 @@
+<form [formGroup]="temperatureForm">
+    <input type="text" placeholder="Insert Temperature" formControlName="temperature">
+    <button (click)="insert()">Insert Temperature</button>
+    <!-- <div *ngIf="tempArr?.length">
+        <button (click)="get_max()">Get Highest Temperature</button>
+        <button (click)="get_min()">Get Lowest Temperature</button>
+        <button (click)="get_mean()">Get Mean of all Temperatures</button>
+        <button (click)="get_mode()">Get Mode of all Temperatures</button>
+    </div> -->
+
+</form><br>
+
+Inserted Temperature List:
+<ul>
+    <li *ngFor="let temp of tempArr">{{temp}}</li>
+</ul>
+<div *ngIf="tempArr?.length">
+
+    <span>Lowest Temperature:{{get_min()}}</span><br>
+    <span>Highest Temperature:{{get_max()}}</span><br>
+    <span>Mean of all Temperature:{{get_mean()}}</span><br>
+    <span>Mode of Temperature:{{get_mode()}}</span>
+</div>
