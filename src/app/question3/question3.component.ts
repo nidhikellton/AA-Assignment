@@ -67,7 +67,7 @@ export class Question3Component implements OnInit {
       counts[e] += 1;
     });
 
-    this.mode = Object.keys(counts).reduce((acc, key) => counts[key] < counts[acc] ? acc : key, 0);
+    this.mode = Object.keys(counts).reduce((acc, key) =>  counts[key] < counts[acc] ? acc : key, 0);
   }
 
 

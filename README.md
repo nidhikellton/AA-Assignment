@@ -2,26 +2,37 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
-## Development server
+## Clone the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+git clone https://github.com/nidhikellton/AA-Assignment.git
+cd AA-Assignment
 
-## Code scaffolding
+## Install npm packages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install the npm packages described in the package.json and verify that it works:
 
-## Build
+npm install
+npm start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The npm start command builds (compiles TypeScript and copies assets) the application into dist/, watches for changes to the source files, and runs lite-server on port 4200.
+
+Shut it down manually with Ctrl-C.
+
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Linting the files
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng lint` - runs tslint on the project files.
 
-## Further help
+## Project Description
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1.Application will start on localhost:4200 with '/' and '/register' it will directly jump into Question1 i.e User Registration Form which contains 4 fields First Name, Last Name,Phone Number and Country.
+
+2.On clicking Anagram Tester link or we can write url as '/anagram' it will jump into Question 2 i.e Anagram Tester where we input two words and on submit it checks whether those words are anagrams or not.
+
+3.On clicking Temperature Tracker link we can go to Question 3 or by url '/temp' we can jump into Question 3 where we have to input the temperature ranging from 0 to 150 and click on Insert Temperature.After adding we will see the list of temperatures we have inserted and also the min,max,mean and mode temperatures below.
+
+
