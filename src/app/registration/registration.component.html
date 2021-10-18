@@ -29,8 +29,9 @@
         <div>
             <label>Country: </label>
             <select formControlName="country">
-                <option disabled>Select Country</option>
+                <option  selected disabled>Select Country</option>
                 <option *ngFor="let country of countries">{{country}}</option>
+                <option></option>
             </select><br>
             <span class="error-msg" *ngIf="submitted && registerForm.controls.country?.errors?.required">Country Name
                 is required</span>
