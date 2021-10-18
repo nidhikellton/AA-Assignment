@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
+import { AnagramComponent } from './anagram.component';
 
-import { Question2Component } from './question2.component';
 
-describe('Question2Component', () => {
-  let component: Question2Component;
-  let fixture: ComponentFixture<Question2Component>;
+describe('AnagramComponent', () => {
+  let component: AnagramComponent;
+  let fixture: ComponentFixture<AnagramComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [FormsModule],
-      declarations: [Question2Component]
+      declarations: [AnagramComponent]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Question2Component);
+    fixture = TestBed.createComponent(AnagramComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
